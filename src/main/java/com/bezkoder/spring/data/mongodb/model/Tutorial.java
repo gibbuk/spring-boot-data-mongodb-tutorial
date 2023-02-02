@@ -21,6 +21,11 @@ public class Tutorial {
         this.published = published;
     }
 
+    public Tutorial(String id, String title, String description, boolean published){
+        this(title, description, published);
+        this.id = id;
+    }
+
 
     public String getId() {
         return id;
